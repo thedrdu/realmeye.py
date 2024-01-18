@@ -1,2 +1,4 @@
 Icon[^M]
 *__pycache__
+Pipfile
+Pipfile.lock
