@@ -2,3 +2,5 @@ Icon[^M]
 *__pycache__
 Pipfile
 Pipfile.lock
+realmeye.egg-info/
+test.py
