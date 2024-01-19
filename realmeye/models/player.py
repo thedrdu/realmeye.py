@@ -17,15 +17,16 @@ class Character(BaseModel):
 class Player(BaseModel):
     name: str
     description: Optional[List[str]] = None
-    characters_count: int
-    skins: int
+    characters_count: Optional[int] = None
+    skins: Optional[int] = None
     exaltations: Optional[int] = None
     fame: int
     rank: int
     account_fame: int
-    guild: str
-    guild_rank: str
+    guild: Optional[str] = None
+    guild_rank: Optional[str] = None
     first_seen: Optional[str] = None
+    created: Optional[str] = None
     last_seen: Optional[str] = None
     characters: Optional[List[Character]] = None
 
