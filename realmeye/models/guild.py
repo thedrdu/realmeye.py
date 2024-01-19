@@ -14,9 +14,7 @@ class Guild(BaseModel):
     members: List[Member]
     characters: int
     fame: int
-    fame_rank: int
     active_server: str
-    active_server_rank: str
 
     @field_validator('name')
     def name_must_not_be_empty(cls, v: str) -> str:

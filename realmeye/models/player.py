@@ -19,14 +19,14 @@ class Player(BaseModel):
     description: Optional[List[str]] = None
     characters_count: int
     skins: int
-    exaltations: int
+    exaltations: Optional[int] = None
     fame: int
     rank: int
     account_fame: int
     guild: str
     guild_rank: str
-    first_seen: str
-    last_seen: str
+    first_seen: Optional[str] = None
+    last_seen: Optional[str] = None
     characters: Optional[List[Character]] = None
 
     @field_validator('name')
