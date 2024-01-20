@@ -2,17 +2,13 @@ from pydantic import BaseModel, field_validator
 from typing import List, Optional
 
 class Character(BaseModel):
-    player_class: str
+    character_class: str
     level: int
     fame: int
     place: int
-    weapon: str
-    ability: str
-    armor: str
-    ring: str
+    items: List[str]
     stats: str
-    last_seen: str
-    server: str
+    last_seen: Optional[str] = None
 
 class Player(BaseModel):
     name: str
