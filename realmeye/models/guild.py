@@ -7,12 +7,14 @@ class Member(BaseModel):
     fame: int
     star_rank: int
     characters: int
+    last_seen: Optional[str]
+    server: Optional[str]
 
 class Guild(BaseModel):
     name: str
     description: Optional[List[str]] = None
     member_count: int
-    # members: List[Member]
+    members: List[Member]
     characters: int
     fame: int
     active_server: str
