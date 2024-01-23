@@ -10,8 +10,9 @@ class Member(BaseModel):
 
 class Guild(BaseModel):
     name: str
-    description: Optional[str] = None
-    members: List[Member]
+    description: Optional[List[str]] = None
+    member_count: int
+    # members: List[Member]
     characters: int
     fame: int
     active_server: str
