@@ -1,1 +1,6 @@
-from .main import get_player_data, get_guild_data, Player, Guild
+"""
+API wrapper for RealmEye built on asyncio and pydantic.
+
+Source Code: https://github.com/thedrdu/realmeye.py
+"""
+from .main import *

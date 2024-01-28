@@ -2,6 +2,7 @@ from pydantic import BaseModel, field_validator
 from typing import List, Optional
 
 class Member(BaseModel):
+    """A Member object to represent retrieved guild member data."""
     name: str
     guild_rank: str
     fame: int
@@ -11,6 +12,7 @@ class Member(BaseModel):
     server: Optional[str]
 
 class Guild(BaseModel):
+    """A Guild object to represent retrieved guild data."""
     name: str
     description: Optional[List[str]] = None
     member_count: int
