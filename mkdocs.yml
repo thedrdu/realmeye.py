@@ -1,0 +1,29 @@
+site_name: realmeye.py
+site_description: An API wrapper for RealmEye.
+site_url: https://thedrdu.github.io/realmeye.py
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: slate
+      primary: brown
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.expand
+  language: en
+repo_name: thedrdu/realmeye.py
+repo_url: https://github.com/thedrdu/realmeye.py
+plugins:
+  - search
+nav:
+  - index.md
+  - credits.md

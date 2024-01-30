@@ -4,7 +4,7 @@ API wrapper for RealmEye written in Python.
 
 This package aims to provide an abstracted, easy-to-use and fully type-hinted API wrapper for developers, in order to gather player and guild information from RealmEye.
 
-![realmeye.py](./docs/assets/realmeye.png)
+![realmeye.py](./assets/realmeye.png)
 
 ## Example Usage
 ```py
@@ -31,5 +31,3 @@ KatsFan
 * [aiohttp](https://docs.aiohttp.org/en/stable/)
 * [pydantic](https://docs.pydantic.dev/latest/)
 * [beautifulsoup4](https://beautiful-soup-4.readthedocs.io/en/latest/)
-
-This README will be updated with more information as progress on this package continues.
