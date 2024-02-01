@@ -26,4 +26,8 @@ plugins:
   - search
 nav:
   - index.md
+  - functions.md
+  - Models:
+      - guild.md
+      - player.md
   - credits.md
