@@ -26,6 +26,7 @@ plugins:
   - search
 nav:
   - index.md
+  - installation.md
   - functions.md
   - Models:
       - guild.md
