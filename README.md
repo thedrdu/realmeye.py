@@ -4,6 +4,8 @@ API wrapper for RealmEye written in Python.
 
 This package aims to provide an abstracted, easy-to-use and fully type-hinted API wrapper for developers, in order to gather player and guild information from RealmEye.
 
+Documentation: https://thedrdu.github.io/realmeye.py/
+
 ![realmeye.py](./docs/assets/realmeye.png)
 
 ## Example Usage
