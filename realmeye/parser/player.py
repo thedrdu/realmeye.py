@@ -92,5 +92,5 @@ def parse_player_data(html_data: str) -> Optional[Player]:
         first_seen=player_info.get('First seen'),
         created=player_info.get('Created'),
         last_seen=player_info.get('Last seen'),
-        characters=characters if characters else None
+        characters=characters
     )
