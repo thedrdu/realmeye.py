@@ -34,7 +34,7 @@ from realmeye import get_guild_data
 
 async def main():
     guild = await get_guild_data("TowerJanitors")
-    print_guild_info(guild)
+    print(guild.characters)
 
 if __name__ == '__main__':
     asyncio.run(main())
