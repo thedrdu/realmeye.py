@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "realmeye"
+version = "0.1.0"
+description = "An API wrapper for RealmEye."
+authors = ["thedrdu <thedrdu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/thedrdu/realmeye.py"
+keywords = ["realmeye", "rotmg"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.9.3"
+beautifulsoup4 = "^4.12.3"
+pydantic = "^2.6.4"
+pydantic-settings = "^2.2.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.2"
+pytest = "^8.1.1"
+mkdocs-material = "^9.5.13"
+pdoc = "^14.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -5,3 +5,4 @@ Pipfile.lock
 realmeye.egg-info/
 test.py
 .DS_STORE
+dist
