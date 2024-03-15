@@ -39,3 +39,22 @@ async def main():
 if __name__ == '__main__':
     asyncio.run(main())
 ```
+
+
+## get_equipment_data()
+
+`get_equipment_data()` attempts to retrieve data for a specified equipment item. If the item's RealmEye Wiki page is found, the function returns an Equipment object containing the basic information on the RealmEye Wiki page. Otherwise, it returns None.
+
+### Example Usage
+
+```py
+import asyncio
+from realmeye import get_guild_data
+
+async def main():
+    equipment = await get_equipment_data("Valor")
+    print(equipment.sprite_url)
+
+if __name__ == '__main__':
+    asyncio.run(main())
+```

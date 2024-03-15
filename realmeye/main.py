@@ -1,8 +1,8 @@
 import aiohttp
 from typing import Optional
-from realmeye.scraper import fetch_player_page, fetch_guild_page
-from realmeye.parser import parse_player_data, parse_guild_data
-from realmeye.models import Player, Guild
+from realmeye.scraper import fetch_player_page, fetch_guild_page, fetch_equipment_page
+from realmeye.parser import parse_player_data, parse_guild_data, parse_equipment_data
+from realmeye.models import Player, Guild, Equipment
 from realmeye.constants import ScraperError, ParserError
 import logging
 
@@ -26,4 +26,15 @@ async def get_guild_data(guild_name: str, session: Optional[aiohttp.ClientSessio
             return guild
     except (ScraperError, ParserError) as e:
         logging.error(f"Error fetching guild data: {e}")
+        return None
+
+async def get_equipment_data(equipment_name: str, session: Optional[aiohttp.ClientSession] = None) -> Optional[Equipment]:
+    """Returns an Equipment object if found, otherwise returns None."""
+    try:
+        async with session or aiohttp.ClientSession() as session:
+            html_data = await fetch_equipment_page(equipment_name, session)
+            guild = parse_equipment_data(html_data)
+            return guild
+    except (ScraperError, ParserError) as e:
+        logging.error(f"Error fetching equipment data: {e}")
         return None
