@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/credits/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/functions/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/guild/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/installation/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://thedrdu.github.io/realmeye.py/player/</loc>
+         <lastmod>2024-03-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
