@@ -1,5 +1,7 @@
 # realmeye.py
 
+[![Discord](https://img.shields.io/discord/1220512271126630461?color=7289DA)](https://discord.gg/7hDnTB9jjE)
+
 API wrapper for RealmEye written in Python.
 
 This package aims to provide an abstracted, easy-to-use and fully type-hinted API wrapper for developers, in order to gather player and guild information from RealmEye.
