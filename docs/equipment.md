@@ -10,7 +10,7 @@ The `Equipment` class in `realmeye.py` is designed to represent equipment item d
 class Equipment(BaseModel):
     """A Guild object to represent retrieved guild data."""
     name: str
-    sprite_url: str
+    sprite_urls: Optional[List[str]] = None
     projectile_urls: Optional[List[str]] = None
     description: Optional[str] = None
 
