@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class Equipment(BaseModel):
-    """A Guild object to represent retrieved guild data."""
+    """An Equipment object to represent retrieved equipment data."""
     name: str
     sprite_urls: Optional[List[str]] = None
     projectile_urls: Optional[List[str]] = None
