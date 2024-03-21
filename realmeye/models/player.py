@@ -1,15 +1,7 @@
 from pydantic import BaseModel, field_validator
 from typing import List, Optional
+from .character import Character
 
-class Character(BaseModel):
-    """A Character object to represent retrieved player character data."""
-    character_class: str
-    level: int
-    fame: int
-    place: int
-    items: List[str]
-    stats: str
-    last_seen: Optional[str] = None
 
 class Player(BaseModel):
     """A Player object to represent retrieved player data."""

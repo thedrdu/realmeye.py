@@ -1,6 +1,6 @@
 from typing import Optional
 from bs4 import BeautifulSoup
-from realmeye.models import Player, Character
+from realmeye.models import Player, Character, Equipment
 
 def parse_player_data(html_data: str) -> Optional[Player]:
     """Parses the raw HTML from a user's RealmEye page to retrieve player data."""
@@ -53,9 +53,7 @@ def parse_player_data(html_data: str) -> Optional[Player]:
                             for item in cell.find_all('span', class_='item'):
                                 title = item.get('title')
                                 if title:
-                                    items.append(title)
-                                else:
-                                    items.append("Empty slot")
+                                    items.append(Equipment(name=title))
                             row_data[header] = items
                         elif header == 'Stats':
                             stats = cell.find('span', class_='player-stats').text if cell.find('span', class_='player-stats') else None
