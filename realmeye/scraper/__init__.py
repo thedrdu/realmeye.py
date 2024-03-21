@@ -1,3 +1,3 @@
-from .player import *
-from .guild import *
 from .equipment import *
+from .guild import *
+from .player import *
